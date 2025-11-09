@@ -17,7 +17,7 @@ function App() {
   const navigate = useNavigate();
 
 useEffect(() => {
-  fetch("http://localhost:3000/shoes")
+  fetch("http://localhost:8080/shoes")
     .then((res) => {
       if (!res.ok) throw new Error("Failed to fetch shoes");
       return res.json();
